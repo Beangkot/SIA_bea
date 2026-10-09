@@ -1,0 +1,83 @@
+{% extends 'inv_items/base.html' %}
+
+
+{% block title %}
+Delete Item
+{% endblock %}
+
+
+{% block content %}
+
+
+<div class="container"
+     style="max-width:600px;">
+
+
+    <div class="card"
+         style="text-align:center;">
+
+
+        <div style="
+            font-size:60px;
+            margin-bottom:15px;
+        ">
+
+            ⚠️
+
+        </div>
+
+
+        <h1 style="margin-bottom:15px;">
+            Delete Item?
+        </h1>
+
+
+        <p style="
+            color:#64748b;
+            margin-bottom:25px;
+        ">
+
+            Are you sure you want to delete
+
+            <strong>
+                {{ item.item_name }}
+            </strong>
+
+            from the system?
+
+        </p>
+
+
+        <form method="POST">
+
+            {% csrf_token %}
+
+
+            <button
+                type="submit"
+                class="btn btn-danger"
+            >
+
+                Yes, Delete
+
+            </button>
+
+
+            <a
+                href="{% url 'item_detail' item.pk %}"
+                class="btn btn-secondary"
+            >
+
+                Cancel
+
+            </a>
+
+        </form>
+
+
+    </div>
+
+</div>
+
+
+{% endblock %}

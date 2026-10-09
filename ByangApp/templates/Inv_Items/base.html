@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+<style>
+    :root {
+        --beige-50: #f9f4ee;
+        --beige-100: #f1e7dc;
+        --beige-200: #e5d4bf;
+        --beige-300: #d6b995;
+        --beige-400: #c9a77d;
+        --beige-500: #b58c62;
+        --beige-600: #8d6d50;
+        --beige-700: #715b49;
+        --beige-800: #56463d;
+        --beige-900: #3f312d;
+    }
+
+    body {
+        background: linear-gradient(135deg, var(--beige-50), var(--beige-100));
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: var(--beige-800);
+    }
+
+    .navbar, .bg-primary, .app-header {
+        background: linear-gradient(135deg, var(--beige-300), var(--beige-600)) !important;
+        color: #fff !important;
+    }
+
+    [class*="bg-indigo"],
+    [class*="text-indigo"],
+    [class*="border-indigo"],
+    [class*="focus:ring-indigo"],
+    [class*="hover:bg-indigo"],
+    [class*="hover:text-indigo"] {
+        background-color: var(--beige-300) !important;
+        color: var(--beige-700) !important;
+        border-color: var(--beige-300) !important;
+        --tw-ring-color: var(--beige-300) !important;
+        box-shadow: 0 0 0 2px rgba(181, 140, 98, 0.15) !important;
+    }
+
+    /* Scrollbar styling */
+    ::-webkit-scrollbar-track {
+        background: var(--beige-50);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--beige-200);
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--beige-400);
+    }
+</style>
